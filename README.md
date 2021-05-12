@@ -1,13 +1,10 @@
 # Acme ReferenceExtension
 
-Author: YourNameHere
-
-This Bolt extension can be used as a starting point to base your own extensions on.
-
+A small Bolt 4/5 extension to `chmod` files that need to be writabable for both the shell-user, as well as the webserver. Primarily for shared hosting, where you have less control over these matters.
 Installation:
 
 ```bash
-composer require acmecorp/reference-extension
+composer require bobdenotter/chmodinator
 ```
 
 
