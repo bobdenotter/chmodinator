@@ -2,20 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Chmodinator\ReferenceExtension;
+namespace Bobdenotter\Chmodinator;
 
 use Bolt\Extension\ExtensionController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class Controller extends ExtensionController
 {
-    public function index($name = 'foo'): Response
+   /**
+    * @Route("/chmodinator/{key}", name="chmodinator_trigger")
+    */
+    public function index($key = 'foo'): Response
     {
-        $context = [
-            'title' => 'AcmeCorp Reference Extension',
-            'name' => $name,
-        ];
-
-        return $this->render('@reference-extension/page.html.twig', $context);
+        return new Response('ok');
     }
 }

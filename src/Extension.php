@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Chmodinator\ReferenceExtension;
+namespace Bobdenotter\Chmodinator;
 
 use Bolt\Extension\BaseExtension;
 use Symfony\Component\Routing\Route;
@@ -14,7 +14,7 @@ class Extension extends BaseExtension
      */
     public function getName(): string
     {
-        return 'AcmeCorp ReferenceExtension';
+        return 'Chmodinator';
     }
 
     /**

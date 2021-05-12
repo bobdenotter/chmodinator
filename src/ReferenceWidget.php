@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Chmodinator\ReferenceExtension;
+namespace Bobdenotter\Chmodinator;
 
 use Bolt\Widget\BaseWidget;
 use Bolt\Widget\CacheAwareInterface;
