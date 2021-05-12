@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AcmeCorp\ReferenceExtension;
+namespace Chmodinator\ReferenceExtension;
 
 use Bolt\Extension\ExtensionController;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,3 +1,5 @@
-# Reference extension configuration file
+# Chmodinator extension configuration file
 
-foo: Bar
+key: abc123456def
+
+url: "https://localhost:8000/"
