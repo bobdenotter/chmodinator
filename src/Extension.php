@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bobdenotter\Chmodinator;
+namespace BobdenOtter\Chmodinator;
 
 use Bolt\Extension\BaseExtension;
 use Symfony\Component\Routing\Route;
@@ -25,13 +25,14 @@ class Extension extends BaseExtension
      */
     public function getRoutes(): array
     {
-        return [
-            'reference' => new Route(
-                '/extensions/reference/{name}',
-                ['_controller' => 'AcmeCorp\ReferenceExtension\Controller::index'],
-                ['name' => '[a-zA-Z0-9]+']
-            ),
-        ];
+        return [];
+//        return [
+//            'reference' => new Route(
+//                '/extensions/reference/{name}',
+//                ['_controller' => 'AcmeCorp\ReferenceExtension\Controller::index'],
+//                ['name' => '[a-zA-Z0-9]+']
+//            ),
+//        ];
     }
 
     /**

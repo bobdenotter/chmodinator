@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bobdenotter\Chmodinator;
+namespace BobdenOtter\Chmodinator;
 
 use Bolt\Extension\ExtensionController;
 use Symfony\Component\HttpFoundation\Response;

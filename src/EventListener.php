@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bobdenotter\Chmodinator;
+namespace BobdenOtter\Chmodinator;
 
 use Bolt\Widget\Injector\RequestZone;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;

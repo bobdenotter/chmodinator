@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Bobdenotter\\Chmodinator\\": "src/"
+            "BobdenOtter\\Chmodinator\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
-        "entrypoint": "Bobdenotter\\Chmodinator\\Extension"
+        "entrypoint": "BobdenOtter\\Chmodinator\\Extension"
     }
 }

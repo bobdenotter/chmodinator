@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bobdenotter\Chmodinator;
+namespace BobdenOtter\Chmodinator;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
