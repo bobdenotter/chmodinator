@@ -11,8 +11,7 @@
     ],
     "require": {
         "php": ">=7.2.9",
-        "twig/twig": "^2.12 | ^3.0",
-        "symfony/flex": "^1.12"
+        "twig/twig": "^2.12 | ^3.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12",
