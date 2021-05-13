@@ -10,9 +10,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class Controller extends ExtensionController
 {
-   /**
-    * @Route("/chmodinator/{key}", name="chmodinator_trigger")
-    */
+    /**
+     * @Route("/chmodinator/{key}", name="chmodinator_trigger")
+     */
     public function index($key = 'foo'): Response
     {
         return new Response('ok');
