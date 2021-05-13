@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace BobdenOtter\Chmodinator;
 
 use Bolt\Extension\BaseExtension;
-use Symfony\Component\Routing\Route;
 
 class Extension extends BaseExtension
 {
@@ -32,6 +31,4 @@ class Extension extends BaseExtension
 
 //        $this->addListener('kernel.response', [new EventListener(), 'handleEvent']);
     }
-
-
 }

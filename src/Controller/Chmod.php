@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BobdenOtter\Chmodinator;
+namespace BobdenOtter\Chmodinator\Controller;
 
 use Bolt\Extension\ExtensionController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class Controller extends ExtensionController
+class Chmod extends ExtensionController
 {
     /**
      * @Route("/chmodinator/{key}", name="chmodinator_trigger")
