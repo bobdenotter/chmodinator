@@ -1,5 +1,4 @@
-
-#chmodinator_extension_controllers:
+#chmodinator_extension:
 #    resource: '../../vendor/bobdenotter/chmodinator/src/Controller/'
 #    prefix: '%bolt.backend_url%'
 #    type: annotation
