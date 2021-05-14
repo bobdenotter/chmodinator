@@ -13,7 +13,7 @@ class Extension extends BaseExtension
      */
     public function getName(): string
     {
-        return 'Chmodinator';
+        return 'Chmødïna✝oR!!1 🤘';
     }
 
     /**
