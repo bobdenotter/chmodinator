@@ -1,7 +1,5 @@
 # Chmodinator extension configuration file
 
 key: abc123456def
-
 permissions: 777
 
-url: "https://localhost:8000/"
