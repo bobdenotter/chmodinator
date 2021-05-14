@@ -23,8 +23,8 @@ the site works after deployment, but also so that the commandline user is
 allowed to clean up the files of old deploys.
 
 Alternatively, you can just run it as a web-based request, by calling the URL 
-`https://example.org/chmodinator?key=abc123456def`. Obviously, substitute the 
-domain name and the key for yours.
+`https://example.org/chmodinator/abc123456def`. Obviously, substitute the 
+domain name and the key (`abc123456def`) for yours.
 
 ---
 
