@@ -6,7 +6,7 @@ use Bolt\Extension\ExtensionController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class Chmod
+class Chmod extends ExtensionController
 {
     /**
      * @Route("/chmodinator", name="extension_chmodinator")
