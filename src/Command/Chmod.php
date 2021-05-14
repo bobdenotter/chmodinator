@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace BobdenOtter\Chmodinator\Command;
 
@@ -8,7 +9,6 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-
 
 class Chmod extends Command
 {
@@ -20,13 +20,14 @@ class Chmod extends Command
     public function __construct(Chmodinator $chmodinator)
     {
         parent::__construct();
+
         $this->chmodinator = $chmodinator;
     }
 
-    protected function configure()
+    protected function configure(): void
     {
         $this
-            ->setDescription("Runs <info>Chmodinator</info>, make cache, upload folders and others writable");
+            ->setDescription('Runs <info>Chmodinator</info>, make cache, upload folders and others writable');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -40,5 +41,4 @@ class Chmod extends Command
 
         return 0;
     }
-
 }

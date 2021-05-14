@@ -1,13 +1,12 @@
 <?php
 
+declare(strict_types=1);
 
 namespace BobdenOtter\Chmodinator;
 
 use Bolt\Configuration\Config;
 use Bolt\Extension\ExtensionInterface;
 use Bolt\Extension\ExtensionRegistry;
-use Symfony\Component\Finder\Finder;
-use Symfony\Component\Yaml\Yaml;
 use Tightenco\Collect\Support\Collection;
 
 class ChmodinatorConfig

@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace BobdenOtter\Chmodinator;
 
@@ -26,7 +27,7 @@ class Chmodinator
 
     public function checkKey(string $key): bool
     {
-        return ($key == $this->config->getConfig()['key']);
+        return $key === $this->config->getConfig()['key'];
     }
 
     public function run(): void
@@ -48,7 +49,7 @@ class Chmodinator
         $host = $this->config->getBoltConfig()->get('general/canonical');
 
         if (! $host) {
-            echo "Please set the `canonical: ` in `config.yaml`, so that this extension can reach it as a proper web request.";
+            echo 'Please set the `canonical: ` in `config.yaml`, so that this extension can reach it as a proper web request.';
 
             return;
         }

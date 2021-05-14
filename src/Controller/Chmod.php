@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BobdenOtter\Chmodinator\Controller;
 
 use BobdenOtter\Chmodinator\Chmodinator;
@@ -22,12 +24,12 @@ class Chmod extends ExtensionController
      */
     public function index(string $key): Response
     {
-        $result = "Not OK";
+        $result = 'Not OK';
 
         if ($this->chmodinator->checkKey($key)) {
             $this->chmodinator->run();
 
-            $result = "✅ ChmøĐïna✝️oR!!1 ran successfully 🤘";
+            $result = '✅ ChmøĐïna✝️oR!!1 ran successfully 🤘';
         }
 
         return new Response($result);
