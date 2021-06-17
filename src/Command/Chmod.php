@@ -34,8 +34,10 @@ class Chmod extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
+        $io->text('Running Chmodinator on the CLI');
         $this->chmodinator->run();
-        $this->chmodinator->httpRequest();
+
+        $this->chmodinator->httpRequest($io);
 
         $io->success('✅ ChmøĐïna✝️oR!!1 ran successfully 🤘');
 

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace BobdenOtter\Chmodinator;
 
 use Bolt\Canonical;
+use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class Chmodinator
@@ -44,7 +45,7 @@ class Chmodinator
         }
     }
 
-    public function httpRequest(): void
+    public function httpRequest(SymfonyStyle $io): void
     {
         $host = $this->config->getBoltConfig()->get('general/canonical');
 
@@ -55,6 +56,8 @@ class Chmodinator
         }
 
         $link = $host . $this->canonical->generateLink('extension_chmodinator', ['key' => $this->config->getConfig()['key']]);
+
+        $io->text("Running Chmodinator on ${link}");
 
         $this->client->request('GET', $link);
     }
